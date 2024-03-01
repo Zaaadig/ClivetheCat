@@ -3129,13 +3129,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9028795662676239985, guid: 22d59b20465e9474da4bf1fabb934fd0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 541195802}
-    - targetCorrespondingSourceObject: {fileID: 9028795662676239985, guid: 22d59b20465e9474da4bf1fabb934fd0, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 541195803}
     - targetCorrespondingSourceObject: {fileID: 9028795662676239985, guid: 22d59b20465e9474da4bf1fabb934fd0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 541195804}
+    - targetCorrespondingSourceObject: {fileID: 9028795662676239985, guid: 22d59b20465e9474da4bf1fabb934fd0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 541195806}
   m_SourcePrefab: {fileID: 100100000, guid: 22d59b20465e9474da4bf1fabb934fd0, type: 3}
 --- !u!4 &541195799 stripped
 Transform:
@@ -3158,22 +3158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b1dec54a6f0414094fee6b07e820ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &541195802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 541195800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: da5dbb031731f2d4ca0d8cb22c0b26db, type: 2}
 --- !u!114 &541195803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3187,7 +3171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"doorIsOpen?","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"IsOpen","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"KeyName","value":{"$content":"CatKey","$type":"System.String"},"typeHandle":{"Identification":"System.String,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!114 &541195804
@@ -3206,6 +3191,22 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: 324c3041a58fde941a2aa8f47da5eda1, type: 2}
+--- !u!114 &541195806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541195800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 1405ed45831ea4c46a423d640d5a2afb, type: 2}
 --- !u!4 &578435792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1764927022518680284, guid: 3e656f23bf321774c828d865739f52d0, type: 3}
@@ -3216,7 +3217,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 728131096649601221, guid: 3e656f23bf321774c828d865739f52d0, type: 3}
   m_PrefabInstance: {fileID: 530703814477636890}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1683681193}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04ef2e38ca58cd64d8719d57dcc866f6, type: 3}
@@ -5123,7 +5124,7 @@ MonoBehaviour:
   _data:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
-    - {fileID: 11400000, guid: 23eaa153e74c9cb4fbe73543e8272589, type: 2}
+    - {fileID: 11400000, guid: 333a13105cd054246bcb1cf22afd8fdb, type: 2}
 --- !u!114 &849066756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5138,6 +5139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"doorIsOpen?","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"IsOpen","value":null,"typeHandle":{"Identification":"System.String,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!114 &849066758
@@ -6299,7 +6301,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"IsOpen","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":null,"$version":"A"},"$version":"A"},{"name":"AudioClip","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":null,"$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"IsOpen","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"AudioClip","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.AudioClip,
+      UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 8300000, guid: a5067e80dbe07eb42a04a09455d8e6c6, type: 3}
 --- !u!1001 &1110172096
@@ -6384,6 +6388,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a80d66dae24224ebcabfe39d23d6d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1120773406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8227792646582483829, guid: 86ded934b1ed0e84c89c726dfc3426e3, type: 3}
+  m_PrefabInstance: {fileID: 1733976901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1129792416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7006,7 +7015,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Scene","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"Kind":"Scene","collection":{"$content":[{"name":"Inventory","value":{"$content":[],"$type":"System.Collections.Generic.List`1[[System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"typeHandle":{"Identification":"System.Collections.Generic.List`1[[System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!4 &1218185771
 Transform:
@@ -12119,6 +12131,44 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6432858626561704346, guid: f01aa3b693790394a923bc085106a8cb, type: 3}
   m_PrefabInstance: {fileID: 1670124461}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1683681193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9121358938839847441, guid: 3e656f23bf321774c828d865739f52d0, type: 3}
+  m_PrefabInstance: {fileID: 530703814477636890}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1683681194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683681193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: ddfa19faff70dae449f95795a0567b50, type: 2}
+--- !u!114 &1683681195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683681193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"DoorToOpen","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 849066753}
 --- !u!1001 &1702932744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12328,7 +12378,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8227792646582483829, guid: 86ded934b1ed0e84c89c726dfc3426e3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1733976905}
+    - targetCorrespondingSourceObject: {fileID: 8227792646582483829, guid: 86ded934b1ed0e84c89c726dfc3426e3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1733976904}
   m_SourcePrefab: {fileID: 100100000, guid: 86ded934b1ed0e84c89c726dfc3426e3, type: 3}
 --- !u!4 &1733976902 stripped
 Transform:
@@ -12340,12 +12396,44 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8227792646582483839, guid: 86ded934b1ed0e84c89c726dfc3426e3, type: 3}
   m_PrefabInstance: {fileID: 1733976901}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1120773406}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04ef2e38ca58cd64d8719d57dcc866f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1733976904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120773406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 9de9118d17dcafd4eac1eba1456aacd1, type: 2}
+--- !u!114 &1733976905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120773406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"KeyName","value":{"$content":"CatKey","$type":"System.String"},"typeHandle":{"Identification":"System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1001 &1748388649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14446,7 +14534,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9121358938839847441, guid: 3e656f23bf321774c828d865739f52d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1683681195}
+    - targetCorrespondingSourceObject: {fileID: 9121358938839847441, guid: 3e656f23bf321774c828d865739f52d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1683681194}
   m_SourcePrefab: {fileID: 100100000, guid: 3e656f23bf321774c828d865739f52d0, type: 3}
 --- !u!1001 &1057594757337029266
 PrefabInstance:
