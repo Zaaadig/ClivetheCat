@@ -16673,7 +16673,7 @@ MonoBehaviour:
     - {fileID: 1289011742}
     PrefabIndex: 1
     Rotation: 3
-  m_SpawnPoint: {x: 8, y: 0, z: 3}
+  m_SpawnPoint: {x: 8, y: 0, z: 2}
   m_EndPoint: {x: 6, y: 0, z: -1}
   m_InteractiveCutWalls:
   - {fileID: 1110172099}
@@ -18330,9 +18330,11 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"IsOn","value":{"$content":true,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"TrapDoorToOpen","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"FourthDoorToOpen","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 3167424557500690278}
+    - {fileID: 1095832463}
 --- !u!1001 &1975117276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19495,6 +19497,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1492325497}
     m_Modifications:
+    - target: {fileID: 6597132627884882328, guid: ec394aa733c6b4f4c83a87873bb8280b, type: 3}
+      propertyPath: _data._json
+      value: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597132627884882328, guid: ec394aa733c6b4f4c83a87873bb8280b, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597132627884882328, guid: ec394aa733c6b4f4c83a87873bb8280b, type: 3}
+      propertyPath: _data._objectReferences.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 512bf92d15a95b74a9b63081479512f5, type: 2}
     - target: {fileID: 6597132627884882330, guid: ec394aa733c6b4f4c83a87873bb8280b, type: 3}
       propertyPath: m_Name
       value: Crate
@@ -19870,3 +19884,64 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
+--- !u!1001 &8502808861265731065
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3197934947856793736, guid: 1afdda4847ab0614c968781996f9dc50, type: 3}
+      propertyPath: m_Name
+      value: SoundManager2D
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241090844074156761, guid: 1afdda4847ab0614c968781996f9dc50, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241090844074156761, guid: 1afdda4847ab0614c968781996f9dc50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.854339
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241090844074156761, guid: 1afdda4847ab0614c968781996f9dc50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.1820765
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241090844074156761, guid: 1afdda4847ab0614c968781996f9dc50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.5304418
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241090844074156761, guid: 1afdda4847ab0614c968781996f9dc50, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241090844074156761, guid: 1afdda4847ab0614c968781996f9dc50, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241090844074156761, guid: 1afdda4847ab0614c968781996f9dc50, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241090844074156761, guid: 1afdda4847ab0614c968781996f9dc50, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241090844074156761, guid: 1afdda4847ab0614c968781996f9dc50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241090844074156761, guid: 1afdda4847ab0614c968781996f9dc50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241090844074156761, guid: 1afdda4847ab0614c968781996f9dc50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1afdda4847ab0614c968781996f9dc50, type: 3}
